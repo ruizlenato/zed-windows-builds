@@ -83,6 +83,7 @@ jobs:
         working-directory: zed
         env:
           ZED_UPDATE_EXPLANATION: "Please use Scoop to update Zed."
+          ZED_BUILD_REMOTE_SERVER: 1
         run: cargo build --release
 
       - name: Archive build
